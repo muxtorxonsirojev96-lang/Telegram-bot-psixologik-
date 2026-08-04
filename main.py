@@ -1,8 +1,8 @@
 import telebot
 import requests
 
-TELEGRAM_BOT_TOKEN = os.getenv("8893165963:AAFC-128vT5Z4N5SplPb_bJKDpaoxLtytHs"
-GEMINI_API_KEY = os.getenv("AQ.Ab8RN6I68xPnMo7pVEMebDJsF2WkGOAAhqcSEVoRzIDmiDVzqA"
+TELEGRAM_BOT_TOKEN = os.getenv"8893165963:AAFC-128vT5Z4N5SplPb_bJKDpaoxLtytHs"
+GEMINI_API_KEY = os.getenv"AQ.Ab8RN6I68xPnMo7pVEMebDJsF2WkGOAAhqcSEVoRzIDmiDVzqA"
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
 
 SYSTEM_PROMPT = """Siz iliq, samimiy va tushunuvchan psixologik yordam beruvchi suhbatdoshsiz. Amaliy psixologiya va islomiy qadriyatlarga (sabr, shukr, tavakkul) asoslanib maslahat berasiz.
