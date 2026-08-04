@@ -29,7 +29,7 @@ def start(m):
 @bot.message_handler(func=lambda m: True)
 def chat(m):
     bot.send_chat_action(m.chat.id, 'typing')
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
     headers = {"x-goog-api-key": GEMINI_API_KEY, "Content-Type": "application/json"}
     payload = {
         "contents": [{"parts": [{"text": f"{SYSTEM_PROMPT}\n\nFoydalanuvchi: {m.text}"}]}],
